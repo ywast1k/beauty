@@ -10,17 +10,22 @@ import Registration from './pages/Registration';
 import BookTime from './pages/BookTime';
 import theme from './theme';
 import './index.css';
-import Footer from './components/Footer'; 
+import Footer from './components/Footer.jsx'; // Импорт компонента Footer
 import { UserProvider } from './UserContext';
+import BrandLogo from './assets/brand-logoAppBar.png'; // Импорт логотипа
+import DashboardLayoutBranding from './components/DashboardLayoutBranding';
+
 
 function App() {
   return (
+    
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <UserProvider>
       <Router>
         <AppBar position="static" color="primary">
           <Toolbar style={{ justifyContent: 'space-between' }}>
+        <img src={BrandLogo} alt="Логотип бренда" style={{ width: '60px', marginLeft: '20px'}} />
             <Typography variant="h6" style={{ flexGrow: 1 }}>
               Li&Ka
             </Typography>
