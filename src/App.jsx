@@ -13,7 +13,7 @@ import './index.css';
 import Footer from './components/Footer.jsx'; // Импорт компонента Footer
 import { UserProvider } from './UserContext';
 import BrandLogo from './assets/brand-logoAppBar.png'; // Импорт логотипа
-import DashboardLayoutBranding from './components/DashboardLayoutBranding';
+
 
 
 function App() {

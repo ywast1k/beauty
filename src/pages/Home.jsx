@@ -1,15 +1,24 @@
-import Typography from '@mui/material/Typography';
-import PageContainerFullScreen from '../components/Navigation';
+import HeroSection from '../components/HeroSection';
+import AboutUs from '../components/AboutUs';
+import Services from '../components/Services';
+import Testimonials from '../components/Testimonials';
+import ContactUs from '../components/ContactUs';
+
 function Home() {
   return (
     <div>
-      <Typography variant="h4">Добро пожаловать на наш сайт!</Typography>
-      <Typography variant="body1">
-        Мы предоставляем услуги высокого качества для наших клиентов.
-      </Typography>
-      <PageContainerFullScreen />
+      <HeroSection />
+      <AboutUs />
+      <Services />
+      <Testimonials />
+      <ContactUs />
+            
+    
     </div>
   );
 }
 
 export default Home;
+
+
+
