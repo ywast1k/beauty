@@ -7,18 +7,23 @@ import ContactUs from '../components/ContactUs';
 function Home() {
   return (
     <div>
-      <HeroSection />
-      <AboutUs />
-      <Services />
-      <Testimonials />
-      <ContactUs />
-            
-    
+      <div data-aos="fade-up">
+        <HeroSection />
+      </div>
+      <div data-aos="fade-right">
+        <AboutUs />
+      </div>
+      <div data-aos="fade-left">
+        <Services />
+      </div>
+      <div data-aos="zoom-in">
+        <Testimonials />
+      </div>
+      <div data-aos="fade-up">
+        <ContactUs />
+      </div>
     </div>
   );
 }
 
 export default Home;
-
-
-

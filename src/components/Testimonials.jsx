@@ -7,13 +7,23 @@ const testimonials = [
     feedback: 'Прекрасный салон! Осталась очень довольна услугами.',
     avatar: '/assets/client1.jpg',
   },
+  {
+    name: 'Анна Иванова',
+    feedback: 'Прекрасный салон! Осталась очень довольна услугами.',
+    avatar: '/assets/client1.jpg',
+  },
+  {
+    name: 'Анна Иванова',
+    feedback: 'Прекрасный салон! Осталась очень довольна услугами.',
+    avatar: '/assets/client1.jpg',
+  },
   // Добавьте другие отзывы
 ];
 
 function Testimonials() {
   return (
     <Container sx={{ py: 8 }}>
-      <Typography variant="h4" align="center" gutterBottom>
+      <Typography variant="h4" align="center" gutterBottom paddingBottom={10}>
         Отзывы наших клиентов
       </Typography>
       <Grid container spacing={4}>
@@ -30,6 +40,7 @@ function Testimonials() {
                 </Typography>
               </CardContent>
             </Card>
+            
           </Grid>
         ))}
       </Grid>

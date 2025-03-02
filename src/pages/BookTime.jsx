@@ -1,5 +1,5 @@
 // src/pages/BookTime.jsx
-import { List, ListItem, ListItemText } from '@mui/material';
+import { autocompleteClasses, List, ListItem, ListItemText } from '@mui/material';
 import { useState, useContext, useEffect } from 'react';
 import {
   Typography,
@@ -52,7 +52,7 @@ function BookTime() {
 
   if (!user) {
     return (
-      <Typography variant="h6" sx={{ mt: 4 }}>
+      <Typography variant="h6" sx={{ mt: 4 }} > 
         Пожалуйста, войдите или зарегистрируйтесь для бронирования.
       </Typography>
     );
@@ -87,7 +87,7 @@ function BookTime() {
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <Box component="form" onSubmit={handleSubmit} sx={{ mt: 4 }}>
+      <Box component="form" onSubmit={handleSubmit} sx={{mx: 'auto',display: 'flex', flexDirection: 'column',alignItems: 'center', }} maxWidth={560} > 
         <Typography variant="h4" gutterBottom>
           Бронирование времени
         </Typography>

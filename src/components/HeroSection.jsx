@@ -1,12 +1,14 @@
 import { Box, Typography, Button } from '@mui/material';
 import brandLogo from '../assets/hero4.jpg';
+import { Link } from 'react-router-dom';
+
 
 
 function HeroSection() {
   return (
     <Box
       sx={{
-        height: '90vh',
+        height: '100vh',
         backgroundImage: `url(${brandLogo})`,
         margin: 0,
         width: '100%',
@@ -27,7 +29,7 @@ function HeroSection() {
       <Typography variant="h5" gutterBottom>
         Откройте для себя мир совершенства
       </Typography>
-      <Button variant="contained" color="secondary" size="large" sx={{ mt: 3 }}>
+      <Button variant="contained" color="secondary" size="large" sx={{ mt: 3 }} component={Link} to="/registration">
         Записаться сейчас
       </Button>
     </Box>

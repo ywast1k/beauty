@@ -13,8 +13,7 @@ function Registration() {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    // Обработайте данные регистрации здесь
+    e.preventDefault(); // Обработайте данные регистрации здесь
     const user = { username, email }; // Определяем объект пользователя
     console.log(user);
     login(user); // Авторизуем пользователя после регистрации

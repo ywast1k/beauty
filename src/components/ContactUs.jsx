@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 function ContactUs() {
   return (
     <Container sx={{ py: 8 }}>
-      <Typography variant="h4" align="center" gutterBottom>
+      <Typography variant="h4" align="center" gutterBottom paddingBottom={10}>
         Свяжитесь с нами
       </Typography>
       <Grid container spacing={4}>

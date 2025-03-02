@@ -13,7 +13,8 @@ import './index.css';
 import Footer from './components/Footer.jsx'; // Импорт компонента Footer
 import { UserProvider } from './UserContext';
 import BrandLogo from './assets/brand-logoAppBar.png'; // Импорт логотипа
-
+import 'aos/dist/aos.css'; // Импорт стилей для анимации
+import AOS from 'aos'; // Импорт библиотеки анимации
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
       <CssBaseline />
       <UserProvider>
       <Router>
-        <AppBar position="static" color="primary">
+        <AppBar position="fixed" color="primary">
           <Toolbar style={{ justifyContent: 'space-between' }}>
         <img src={BrandLogo} alt="Логотип бренда" style={{ width: '60px', marginLeft: '20px'}} />
             <Typography variant="h6" style={{ flexGrow: 1 }}>
