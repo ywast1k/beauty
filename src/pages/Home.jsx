@@ -7,9 +7,9 @@ import ContactUs from '../components/ContactUs';
 function Home() {
   return (
     <div>
-      <div data-aos="fade-up">
+      
         <HeroSection />
-      </div>
+      
       <div data-aos="fade-right">
         <AboutUs />
       </div>
@@ -23,6 +23,7 @@ function Home() {
         <ContactUs />
       </div>
     </div>
+    
   );
 }
 

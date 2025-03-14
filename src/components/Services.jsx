@@ -1,37 +1,12 @@
 
 import {  Container, Typography, Card, CardContent, CardMedia, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import Manicure from '../assets/manicure.jpg';
-import Resnitsi from '../assets/resnitsi.jpg';
-import Brovi from '../assets/brovi.jpg';
-import Pedicure from '../assets/pedicure.jpeg';
 
+import { Link } from 'react-router-dom';
+import services from '../services';
+// Импортируем массив услуг из файла services.js
 
-
-const services = [
-  {
-    title: 'Маникюр',
-    description: 'Профессиональный уход за вашими руками и ногтями.',
-    image: Manicure
-  },
-  {
-    title: 'Педикюр',
-    description: 'Индивидуальный подход для идеальных стоп.',
-    image: Pedicure
-  },
-  {
-    title: 'Ресницы',
-    description: 'Преобразите свой взгляд с помощью профессионального наращивания и ламинирования ресниц. Мы создаём естественную длину и объём, подчеркивая вашу природную красоту.',
-    image: Resnitsi
-  },
-  {
-    title: 'Брови',
-    description: 'Искусство идеальных бровей: моделирование, окрашивание и коррекция формы для гармонии и выразительности вашего лица. Индивидуальный подход к каждому образу.',
-    image: Brovi
-  },
-  // Добавьте остальные услуги
-];
-
+// Внутри компонента Services
 function Services() {
   return (
     <Container sx={{ py: 8 }}>
@@ -40,10 +15,15 @@ function Services() {
       </Typography>
       <Grid container spacing={4} justifyContent="center" alignItems="stretch">
         {services.map((service) => (
-          <Grid item key={service.title} xs={12} sm={6} md={4} >
-            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column'}}>
-              <CardMedia component="img" image={service.image} alt={service.title} height="200" />
-              <CardContent >
+          <Grid item key={service.id} xs={12} sm={6} md={4}>
+            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <CardMedia
+                component="img"
+                image={service.image}
+                alt={service.title}
+                height="200"
+              />
+              <CardContent sx={{ flexGrow: 1 }}>
                 <Typography variant="h5" gutterBottom>
                   {service.title}
                 </Typography>
@@ -51,7 +31,15 @@ function Services() {
                   {service.description}
                 </Typography>
               </CardContent>
-              <Button size="small" color="primary">
+              <Button
+                
+                size="large"
+                variant="contained"
+                color="#fff"
+                component={Link}
+                to={`/services/${service.id}`}
+                sx={{ margin: 2, backgroundColor: 'green' }}
+              >
                 Подробнее
               </Button>
             </Card>
@@ -63,3 +51,6 @@ function Services() {
 }
 
 export default Services;
+
+
+

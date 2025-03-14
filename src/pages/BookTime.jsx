@@ -1,5 +1,5 @@
 // src/pages/BookTime.jsx
-import { autocompleteClasses, List, ListItem, ListItemText } from '@mui/material';
+import { List, ListItem, ListItemText } from '@mui/material';
 import { useState, useContext, useEffect } from 'react';
 import {
   Typography,
@@ -18,7 +18,7 @@ import {
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import dayjs from 'dayjs';
 import { UserContext } from '../UserContext';
-// import '@mui/x-date-pickers/styles';
+
 
 function BookTime() {
   const [selectedDate, setSelectedDate] = useState(dayjs());

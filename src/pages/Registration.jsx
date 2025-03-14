@@ -5,6 +5,7 @@ import { useState, useContext } from 'react';
 import { UserContext } from '../UserContext.jsx';
 import { useNavigate } from 'react-router-dom';
 
+
 function Registration() {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
@@ -76,8 +77,8 @@ function Registration() {
             type="submit"
             fullWidth
             variant="contained"
-            color="primary"
-            sx={{ mt: 3, mb: 2 }}
+            color='primary'
+            sx={{ mt: 3, mb: 2}}
           >
             Зарегистрироваться
           </Button>

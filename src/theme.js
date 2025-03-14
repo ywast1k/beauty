@@ -4,6 +4,8 @@ const theme = createTheme({
   palette: {
     primary: {
       main: '#ffffff', // Устанавливаем основной цвет на белый
+      color: '#000000',
+
     },
   },
 });
