@@ -3,7 +3,8 @@
 
 // 
 // src/UserContext.jsx
-import { createContext, useState } from 'react';
+import { createContext, useState, useContext } from 'react';
+import PropTypes from 'prop-types';
 // 
 // Создаём контекст
 export const UserContext = createContext(null);
@@ -19,5 +20,13 @@ export function UserProvider({ children }) {
     <UserContext.Provider value={{ user, login, logout }}>
       {children}
     </UserContext.Provider>
+    
   );
+
 }
+// Проверка типов для пропсов
+UserProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+// Хук для использования контекста
+export const useUser = () => useContext(UserContext);

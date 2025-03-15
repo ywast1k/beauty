@@ -1,21 +1,22 @@
 import { Container, Typography, Avatar, Card, CardContent } from '@mui/material';
 import Grid from '@mui/material/Grid';
+import client from '../assets/client1.jpg';
 
 const testimonials = [
   {
     name: 'Анна Иванова',
     feedback: 'Прекрасный салон! Осталась очень довольна услугами.',
-    avatar: '/assets/client1.jpg',
+    avatar: client,
   },
   {
     name: 'Анна Иванова',
-    feedback: 'Прекрасный салон! Осталась очень довольна услугами.',
-    avatar: '/assets/client1.jpg',
+    feedback: 'Ну что за счастье использовать ваши услуги!',
+    avatar: client,
   },
   {
     name: 'Анна Иванова',
-    feedback: 'Прекрасный салон! Осталась очень довольна услугами.',
-    avatar: '/assets/client1.jpg',
+    feedback: 'Ну как бы всё хорошо, но можно и лучше.',
+    avatar: client,
   },
   // Добавьте другие отзывы
 ];
@@ -31,7 +32,7 @@ function Testimonials() {
           <Grid item key={testimonial.name} xs={12} sm={6} md={4}>
             <Card>
               <CardContent>
-                <Avatar src={testimonial.avatar} alt={testimonial.name} sx={{ width: 64, height: 64, mx: 'auto', mb: 2 }} />
+                <Avatar src={testimonial.avatar} alt={testimonial.name} sx={{ width: 64, height: 64, mx: 'auto', mb: 2}} />
                 <Typography variant="h6" align="center">
                   {testimonial.name}
                 </Typography>

@@ -38,7 +38,7 @@ function Services() {
                 color="#fff"
                 component={Link}
                 to={`/services/${service.id}`}
-                sx={{ margin: 2, backgroundColor: 'green' }}
+                sx={{ margin: 2, backgroundColor: 'purple' }}
               >
                 Подробнее
               </Button>

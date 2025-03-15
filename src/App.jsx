@@ -17,6 +17,7 @@ import BrandLogo from "./assets/brand-logoAppBar.png"; // Импорт лого�
 import "aos/dist/aos.css"; // Импорт стилей для анимации
 import AOS from "aos"; // Импорт библиотеки анимации
 // import ContactPage from './pages/ContactPage'; // Импорт компонента ContactPage
+
 import useMediaQuery from "@mui/material/useMediaQuery";
 import IconButton from "@mui/material/IconButton";
 import HomeIcon from "@mui/icons-material/Home";
@@ -94,9 +95,9 @@ function App() {
                     <Button color="inherit" component={Link} to="/book-time">
                       Бронирование времени
                     </Button>
-                     <Button color="inherit" component={Link} to="/ServiceDetails">
+                     {/* <Button color="inherit" component={Link} to="/ServiceDetails">
                       Наш сервис
-                    </Button>
+                    </Button> */}
                     </>
                 )}
               </div>
